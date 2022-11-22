@@ -225,7 +225,7 @@ background-color: var(--backgroud-color);
 
 .hero-button:hover,
 .hero-button:focus {
-    background-color: darkblue;
+    background-color: var(--button-hover-color);
 }
 
 
@@ -556,7 +556,6 @@ display: flex;
 .newsletter-input {
     padding: 15px;
     width: 358px;
-    height: 50px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -574,6 +573,8 @@ display: flex;
 
 
 .newsletter-button {
+    width: 200px;
+    height: 50px;
     border: none;
     padding: 10px 28px;
     border-radius: 4px;
@@ -585,6 +586,10 @@ display: flex;
     font-size: 16px;
     cursor: pointer;
     font-family: 'Roboto';
+}
+
+.newsletter-button:hover, .newsletter-button:focus{
+    background-color: var(--button-hover-color);
 }
 
 .send-icon {
@@ -904,7 +909,13 @@ box-sizing: border-box;
         flex-direction: column;
         justify-content: center;
         position: relative;
-    color: #757575;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: calc(14/12);        
+        letter-spacing: 0.01em;
+        
+        color: var(--main-title-color);
+        margin-bottom: 4px;
 }
 
 
@@ -938,8 +949,10 @@ width: 200px;
     letter-spacing: 0.06em;
     color:var(--white-text-color);
 background-color: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+}
+
+.modal-submit-button:hover, .modal-submit-button:focus{
+    background-color: #1976d2;
 }
 
 .modal-i-agree{
@@ -981,7 +994,7 @@ background-color: var(--accent-color);
 }
 
 .modal-checkbox{
-    width: 15px;
+    width: 16px;
     height: 15px;
     border: 1px solid var(--black-color);
     border-radius: 2px;
@@ -990,11 +1003,12 @@ background-color: var(--accent-color);
     display: flex;
     align-items: center;
     justify-content: center;
+    background-size: auto 100%
 }
 
 .checkbox:checked + .modal-checkbox-label > .modal-checkbox{
     background-color: var(--accent-color);
-    border: none;
+    
 }
 
 
