@@ -884,7 +884,7 @@ transition: background-color var(--timer) var(--timing-function);
     border-radius: 4px;
     transition: var(--border-color var(--timer) var(--timing-function));
 cursor: pointer;
-
+padding-left: 42px;
   }
 
   .modal-input-comment{
@@ -898,8 +898,9 @@ box-sizing: border-box;
         margin-bottom: 10px;
   }
 
-.modal-form{
+  .modal-form{
     width:448px;
+    padding-bottom: 40px;
     margin: 0 auto;
     position: relative;  
 }
@@ -938,6 +939,7 @@ box-sizing: border-box;
 width: 200px;
     height: 50px;
     margin: 0 auto;
+    border: none;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -950,6 +952,7 @@ width: 200px;
     color:var(--white-text-color);
 background-color: var(--accent-color);
 }
+
 
 .modal-submit-button:hover, .modal-submit-button:focus{
     background-color: #1976d2;
@@ -1008,7 +1011,18 @@ background-color: var(--accent-color);
 
 .checkbox:checked + .modal-checkbox-label > .modal-checkbox{
     background-color: var(--accent-color);
-    
+border-color: white;    
 }
+
+.terms-condition, terms-condition-link:visited{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: calc(24/14);
+letter-spacing: 0.03em;
+color: var(--main-title-color);
+}
+
 
 
