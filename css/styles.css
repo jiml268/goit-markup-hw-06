@@ -133,7 +133,7 @@ margin-right: 50px;
     content: '';
     width: 100%;
     background: #2196F3;
-    height: 2px;
+    height: 4px;
     background-color: var(--accent-color);
     position: absolute;
     left:0;
@@ -888,6 +888,7 @@ padding-left: 42px;
   }
 
   .modal-input-comment{
+    padding:12px 16px;
 box-sizing: border-box;
     width: 448px;
     height: 120px;
@@ -896,6 +897,7 @@ box-sizing: border-box;
     resize: none;
     margin-top: 4px;
         margin-bottom: 10px;
+
   }
 
   .modal-form{
